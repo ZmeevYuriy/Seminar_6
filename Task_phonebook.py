@@ -19,6 +19,8 @@ def search_data():
                 result = list(filter(lambda line: answer in line, result))
         for printdata in result:
             output_data_string(printdata)
+            print("всего найдено записей: {} \n".format(len(result)))
+
 
 def output_data_string(printdata):
     parse_data = printdata.split(',')
